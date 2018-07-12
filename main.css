@@ -1,0 +1,27 @@
+body{
+	background-image: url("back.jpg");
+	<!-- background-size:100%; -->
+}
+h1{
+	text-align: center;
+	color: purple; 
+}
+img{
+	width: 700px; 
+	height: 500px; 
+	border: 10px solid pink;
+	display: block; 
+	margin-left:auto; 
+	margin-right:auto;
+	margin: auto;
+	}
+
+p {
+	font-size: 20pt; 
+	text-shadow: 2px 1px #000000  ;
+}
+h2 {
+	color: blue; 
+	font-size: 30px; 
+	text-shadow: 3px 1px #000000 
+}
