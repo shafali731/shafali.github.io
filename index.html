@@ -1,0 +1,334 @@
+{<!--
+  Team Shafakor - Shafali Gupta and Aleksandra Koroza
+  SoftDev2 pd8
+  P #03: You Are the Expert: TEDxSoftDev 2019
+  2019-04-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Shafakor's ionic</title>
+  </head>
+  <body>
+       <!-- A navbar can be created just by using Bootstrap's nav classes. They don't require the list-based approach. -->
+       <div class="container bg-white rounded">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+              <!-- The navbar present at the top of our demo page -->
+                 <a class="navbar-brand text-info" href="#">Ionic</a>
+                 <!-- JavaScript is needed for the toggle to function properly in a tiny window where nav-items cannot be seen -->
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="navbar-nav">
+                           <a class="nav-item nav-link text-warning" href="#overview">Overview<span class="sr-only">(current)</span></a>
+                           <a class="nav-item nav-link text-info" href="#structure">Structure</a>
+                           <a class="nav-item nav-link text-warning" href="#setup">Setup</a>
+                           <a class="nav-item nav-link text-info" href="#demo">Demo</a>
+                      </div>
+                 </div>
+            </nav>
+       </div>
+       <br><br><br>
+       <!-- A container all about Bootstrap! -->
+       <div id="overview" class="container">
+            <h2 class="text-center text-info">What is Ionic?</h2>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <center> <img src="ionic.png" height=150 width=300 > </center>
+                      <p>Ionic Framework is an open source UI toolkit that focused on the user experience of an app (such as the controls, interactions, gestures, and animations).
+The framework provides pre-designed components which allows for easily applicable themes (given a platform).
+                      </p>
+                      <br>
+                      <p>Ionic makes it easy to build high-performance mobile and Progressive Web Apps (or PWAs) that work on any platform or device. </p>
+                      <alert class="alert alert-warning float-right p-1 ">PWA's= web apps that load like regular web pages but can offer functionality such as working offline, push notifications, device hardware access, and app-style navigation </alert> <br>
+                      <h5 class="text-info">So who uses this?</h5>
+                      <p> Ionic is one of the most popular open source app platforms in the world! It was launched in 2013 and 5M+ apps were created by 5M+ developers in over 200 countries. </p>
+                      <br>
+                      <p> The creators of the framework hoped to streamline the process of building mobile apps that align to modern Web standards. Many groups rely on ionic to build sleek apps.
+                        Such groups include Amtrak, Nationwide, and NASA.
+                      </p>
+                      <!--- code example
+                      <p> You can load Bootstrap into your <code class="highlighter-rouge">&lt;head&gt;</code> tag of your html file by copy-pasting
+                           the stylesheet <code class="highligher-rouge">&lt;link&gt;</code> below.</p>
+                           <pre class="shadow-sm p-1 mb-5 bg-light rounded"><code>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous&gt;</code></pre>
+                      --->
+                    </div>
+                    </div>
+                  </div>
+                      <div id="structure" class="container">
+                        <div class="row">
+                             <div class="col-md-1">
+                             </div>
+                             <div class="col-md-10">
+                               <h5 class="text-info"> So how does ionic do its magic? </h5>
+                               <h7 class="text-dark">The components are summarized below: </h7>
+                               <img src="comp.webp" >
+                               <h7 class="text-dark">Chart Explanation: </h7>
+                               <p> <b>Angular</b> is a popular JS framework which provides the developer with the right tools to build a web app
+                               while also defining how the code should be organized. Many modern websites rely heavily on JS.</p> <br>
+                               <p> <b>Ionic </b> provides a collection of components that mimic the native look, feel and functionality of each mobile platform.
+                                 Examples of these components include buttons, tabs, menus, lists, cards, modals, and so on. </p> <br>
+                               <p><b>HTML, CSS, and JS </b> are then used to add whatever styles and features you want to your site.</p> <br>
+                               <p><b>Cordova</b> is yet another framework that makes it easy to create an app that runs a web app in a webview.
+                               Ionic uses it to build and run apps as native apps on each device.</p> <br>
+                               <p>Finally, <b>deploy</b> to your preferred market! </p><br>
+                             <!---
+                               <pre class="shadow-sm p-1 mb-5 bg-light rounded">
+                                    <code>&lt;div class="container"&gt;
+                                         &lt;div class="row"&gt;
+                                             &lt;div class="col-md-3"&gt;
+                                             This container has row of 3 columns. The maximum number of columns is 12.
+                                             &lt;/div&gt;
+                                         &lt;/div&gt;
+                                    &lt;/div&gt;</code></pre>
+                               --->
+                                </div>
+                                </div>
+                              </div>
+                              <div id="setup" class="container">
+                                <div class="row">
+                                     <div class="col-md-1">
+                                     </div>
+                                     <div class="col-md-10">
+                                       <h5 class="text-info"> So how do we set this up? </h5>
+                                       <h7 class="text-dark">Setting up is easy, it should only take a few minutes! </h7>
+                                       <p> You will need a Node and npm environment. Node is a runtime environment that allows JS to be written on the server-side.
+                                        It is often used to build dev tools such as the Ionic CLI (Command Line Interface). Npm is the package manager for node; it allows developers to install, share, and package node modules. Ionic can be installed with npm.
+                                      </p> <br>
+                                        <p> Ionic Apps are created and developed primarily through the CLI. To Running the ionic start command together with the desired name and either a pre-made template or a blank one
+                                          Then, immediately serve to see what you got in the browser! </p> <br>
+                                          <p> here is the code for the commands: (code snippet)</p> <br>
+                                          <p> here are links to various setups (windows +ios)</p> <br>
+                                     <!---
+                                       <pre class="shadow-sm p-1 mb-5 bg-light rounded">
+                                            <code>&lt;div class="container"&gt;
+                                                 &lt;div class="row"&gt;
+                                                     &lt;div class="col-md-3"&gt;
+                                                     This container has row of 3 columns. The maximum number of columns is 12.
+                                                     &lt;/div&gt;
+                                                 &lt;/div&gt;
+                                            &lt;/div&gt;</code></pre>
+                                       --->
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div id="demo" class="container">
+                                        <div class="row">
+                                             <div class="col-md-1">
+                                             </div>
+                                             <div class="col-md-10">
+                                               <h5 class="text-info"> Let's see it in action! </h5>
+                                               <h7 class="text-dark">Structure of a basic project </h7>
+                                               <p> </p><br>
+                                             <!---
+                                               <pre class="shadow-sm p-1 mb-5 bg-light rounded">
+                                                    <code>&lt;div class="container"&gt;
+                                                         &lt;div class="row"&gt;
+                                                             &lt;div class="col-md-3"&gt;
+                                                             This container has row of 3 columns. The maximum number of columns is 12.
+                                                             &lt;/div&gt;
+                                                         &lt;/div&gt;
+                                                    &lt;/div&gt;</code></pre>
+                                               --->
+                                                </div>
+                                                </div>
+                                              </div>
+       <!-- A container all about Bootstrap grids!
+       <div class="container">
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <h5 id="grid" class="text-info">What is this grid system?</h5>
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <p>
+                      Bootstrap's grid system is constructed from divs. A div can be classified as
+                      a row or a column of varying sizes. The maximum number of columns in a container is 12.
+                      This paragraph is inside 10 columns. Below is a demonstration of the grid system. To really get a feel for the
+                      way the grid structure deals with layout, try resizing the site window.
+                      </thead>
+                      </p>
+                      <alert class="alert alert-warning p-2 float-right">
+                      Note: There is a column prior to this one to provide padding that aligns this column with our centered heading above!
+                      </alert>
+                      <alert class="alert alert-warning p-2 float-right">
+                      Check line 75 of our source code to look!
+                      </alert>
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-1 border border-info text-center">
+                      I'm a single column in row 1!
+                 </div>
+                 <div class="col-md-4 border border-left-0 border-info text-center">
+                      I have four columns in row 1!
+                 </div>
+                 <div class="col-md-3 border border-left-0 border-right-0 border-info text-center">
+                      I have three columns in row 1!
+                 </div>
+                 <div class="col-md-2 border border-info text-center">
+                      I have two columns in row 1!
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10 border border-info text-center">
+                      <p>I have ten columns in row 2!</p>
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <br>
+                      <alert class="alert alert-warning p-1">Here is our source code for you to try it yourself!</alert>
+                      <pre class="shadow-sm p-1 mb-5 bg-light rounded">
+                      <code>&lt;div class="row"&gt;
+                           &lt;div class="col-md-1"&gt;
+                           &lt;/div&gt;
+                           &lt;div class="col-md-1 border border-info text-center"&gt;
+                              I'm a single column in row 1!
+                           &lt;/div&gt;
+                           &lt;div class="col-md-4 border border-left-0 border-info text-center"&gt;
+                              I have four columns in row 1!
+                           &lt;/div&gt;
+                           &lt;div class="col-md-3 border border-left-0 border-right-0 border-info text-center"&gt;
+                              I have three columns in row 1!
+                           &lt;/div&gt;
+                           &lt;div class="col-md-2 border border-info text-center"&gt;
+                              I have two columns in row 1!
+                           &lt;/div&gt;
+                      &lt;/div&gt;</code></pre>
+                 </div>
+            </div>
+       </div>
+     -->
+       <!-- Container for navbar
+       <div id="nav" class="container">
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <h5 class="text-info">Why use Bootstrap navbars?</h5>
+                      <p> Bootstrap navbars take away the necessity of using lists to create navbars. Instead, links
+                          can be classified as nav-items and nav-links and be incorporated into a navbar.
+                      </p>
+                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div id="doggo-bar" class="nav flex-column col-md-4">
+                      <a class="nav-item nav-link text-danger" href="#gold">Golden Doggo</a>
+                      <a class="nav-item nav-link text-danger" href="#toast">Toasty Doggo</a>
+                 </div>
+                 <div class="col-md-5">
+                      <a href="#nav">
+                      <h3 id="gold" class="text-center p-3 text-primary">Golden Retriever</h3></a>
+                      <img src="goldie.jpeg" class="img-fluid" alt="Responsive image"></img>
+                      <a href="#nav">
+                      <h3 id="toast" class="text-center p-3 text-primary">Corgi</h3></a>
+                      <img src="corgi.jpeg" class="img-fluid" alt="Responsive image"></img>
+                 </div>
+            </div>
+            <div class="row pt-3">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <alert class="alert alert-warning p-1">Here is our source code for our vertical navbar you can try yourself!</alert>
+                      <pre class="shadow-sm p-2 mb-5 bg-light rounded">
+                    <code>&lt;div id="doggo-bar" class="nav flex-column col-md-4"&gt;
+                         &lt;a class="nav-item nav-link text-danger" href="#gold"Golden Doggo&gt;&lt;/a&gt;
+                         &lt;a class="nav-item nav-link text-danger" href="#toast"Toasty Doggo&gt;&lt;/a&gt;
+                    &lt;/div&gt;</code></pre>
+                    <p> You can also view that way we made the ~sleek~ navbar aligned at the top of the page in lines 21-42 of our code!
+                    </p>
+                 </div>
+            </div>
+
+       </div> -->
+       <!-- Container for forms
+       <div id="forms" class="container">
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <h5 class="text-info">How can I include forms?</h5>
+                      <p> Bootstrap facilitates the inclusion of a wide variety of forms and helps with the
+                        layout of these elements. Below is an example of a simple form:
+                      </p>
+                 </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-7">
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+          </div>
+
+            <div class="row pt-3">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <alert class="alert alert-warning p-1"> Here is some quick code you can use to really get a feel for forms. </alert>
+                      <pre class="shadow-sm p-2 mb-5 bg-light rounded">
+                    <code>
+                      &lt;form&gt;
+                           &lt;div class="form-group"&gt;
+                             &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+                             &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"&gt;
+                           &lt;/div&gt;
+                           &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                      &lt;/form&gt;</code></pre>
+                    <p> Note the use of the appropriate type attribute on all inputs (such as email for the example code input). There are
+                      many other form features <a class="text-info" href="https://getbootstrap.com/docs/4.0/components/forms/?">not covered by this tutorial</a> such as radios and checkboxes.
+                      What you should take away is that forms are subject to the same grid system as other features previously examined and that the .form-group class is the easiest way to add
+                      some structure to forms. You have already seen this used in the example code (class="form-group").
+                    </p>
+                    <p> Now you are ready to make some beautiful websites!
+                    </p>
+                 </div>
+            </div>
+
+       </div> -->
+       <br><br><br><br>
+       <footer class="-footer bg-dark fixed-bottom text-right text-light">&copy;Shafakor &mdash; Shafali Gupta and Aleksandra Koroza</footer>
+
+  </body>
+</html>
+}
