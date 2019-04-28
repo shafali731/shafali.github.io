@@ -209,26 +209,26 @@ Tapped: {{tap}} times
                                                <h5 class="text-info"> Lists </h5>
                                                <h6 class="text-info"> Source code:</h6>
                                              <code><pre>
-                                               &lt;ion-header&gt;
-                                                 &lt;ion-navbar&gt;
-                                                   &lt;button ion-button menuToggle&gt;
-                                                     &lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
-                                                   &lt;/button&gt;
-                                                   &lt;ion-title&gt;Lists&lt;/ion-title&gt;
-                                                 &lt;/ion-navbar&gt;
-                                               &lt;/ion-header&gt;
+&lt;ion-header&gt;
+&lt;ion-navbar&gt;
+&lt;button ion-button menuToggle&gt;
+&lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+&lt;/button&gt;
+&lt;ion-title&gt;Lists&lt;/ion-title&gt;
+&lt;/ion-navbar&gt;
+&lt;/ion-header&gt;
 
-                                               &lt;ion-content&gt;
-                                                 &lt;ion-list&gt;
-                                                   &lt;button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)"&gt;
-                                                     &lt;ion-icon name="{{item.icon}}" item-left&gt;&lt;/ion-icon&gt;
-                                                     {{item.title}}
-                                                     &lt;div class="item-note" item-right&gt;
-                                                       {{item.note}}
-                                                     &lt;/div&gt;
-                                                   &lt;/button&gt;
-                                                 &lt;/ion-list&gt;
-                                               &lt;/ion-content&gt;
+&lt;ion-content&gt;
+&lt;ion-list&gt;
+&lt;button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)"&gt;
+&lt;ion-icon name="{{item.icon}}" item-left&gt;&lt;/ion-icon&gt;
+{{item.title}}
+&lt;div class="item-note" item-right&gt;
+{{item.note}}
+&lt;/div&gt;
+&lt;/button&gt;
+&lt;/ion-list&gt;
+&lt;/ion-content&gt;
 
 
 
