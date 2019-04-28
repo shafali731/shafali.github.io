@@ -17,6 +17,11 @@
 
     <title>Shafakor's ionic</title>
   </head>
+  <style>
+    .m{
+      length:50px;
+    }
+  </style>
   <body>
        <!-- A navbar can be created just by using Bootstrap's nav classes. They don't require the list-based approach. -->
        <div class="container bg-white rounded">
@@ -108,8 +113,11 @@ The framework provides pre-designed components which allows for easily applicabl
                                       </p> <br>
                                         <p> Ionic Apps are created and developed primarily through the CLI. To Running the ionic start command together with the desired name and either a pre-made template or a blank one
                                           Then, immediately serve to see what you got in the browser! </p> <br>
-                                          <p> here is the code for the commands: (code snippet)</p> <br>
-                                          <p> here are links to various setups (windows +ios)</p> <br>
+                                          <p> Start a project using this code after your environment is setup</p> <br>
+                                          <pre><code> $ ionic start myApp blank;
+ $ ionic serve;</code></pre>
+                                          <p>To setup everything, use the documentation linked below.</p>
+                                        <p>  &emsp;  https://ionicframework.com/docs/installation/cli </p> <br>
                                      <!---
                                        <pre class="shadow-sm p-1 mb-5 bg-light rounded">
                                             <code>&lt;div class="container"&gt;
@@ -131,16 +139,195 @@ The framework provides pre-designed components which allows for easily applicabl
                                                <h5 class="text-info"> Let's see it in action! </h5>
                                                <h7 class="text-dark">Structure of a basic project </h7>
                                                <p> </p><br>
-                                             <!---
-                                               <pre class="shadow-sm p-1 mb-5 bg-light rounded">
-                                                    <code>&lt;div class="container"&gt;
-                                                         &lt;div class="row"&gt;
-                                                             &lt;div class="col-md-3"&gt;
-                                                             This container has row of 3 columns. The maximum number of columns is 12.
-                                                             &lt;/div&gt;
-                                                         &lt;/div&gt;
-                                                    &lt;/div&gt;</code></pre>
-                                               --->
+
+                                               <h5 class="text-info"> Menu </h5>
+                                               <h6 class="text-info"> Source code:</h6>
+                                               <img src="menu.png" alt="menu"  class="m">
+
+                                               <pre><code>
+&lt;ion-header &gt;
+&lt;ion-navbar&gt;
+&lt;  button ion-button menuToggle &gt;
+&lt;    ion-icon name="menu"&gt;&lt; /ion-icon&gt;
+&lt;  /button&gt;
+&lt;  ion-title&gt;login &lt;/ion-title&gt;
+&lt;/ion-navbar&gt;
+&lt; /ion-header&gt;
+
+&lt;  ion-content padding&gt;
+
+&lt;  /ion-content&gt;
+                                              </code></pre>
+                                              <h5 class="text-info"> Home Page </h5>
+                                              <h6 class="text-info"> Source code:</h6>
+                                            <code><pre>
+&lt;ion-header&gt;
+&lt;ion-navbar&gt;
+&lt;button ion-button menuToggle&gt;
+&lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+&lt;/button&gt;
+
+&lt;ion-title&gt;Home&lt;/ion-title&gt;
+&lt;/ion-navbar&gt;
+&lt;/ion-header&gt;
+
+
+&lt;ion-content padding&gt;
+&lt;h3&gt;Welcome Devos!&lt;/h3&gt;
+
+&lt;p&gt;
+This is our demo for how to use the ionic framework.
+&lt;/p&gt;
+&lt;p&gt;
+Enjoy!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;button ion-button color="primary" menuToggle&gt;Toggle Menu&lt;/button&gt;
+&lt;/p&gt;
+&lt;ion-item class = 'check'&gt;
+&lt;ion-label&gt;"Look back at your notes from intro"&lt;/ion-label&gt;
+&lt;ion-checkbox color="dark" checked="true"&gt;&lt;/ion-checkbox&gt;
+&lt;/ion-item&gt;
+&lt;ion-item class = 'check'&gt;
+&lt;ion-label&gt;"Days of relaxation"&lt;/ion-label&gt;
+&lt;ion-checkbox color="dark" checked="true"&gt;&lt;/ion-checkbox&gt;
+&lt;/ion-item&gt;
+&lt;ion-item class = 'check'&gt;
+&lt;ion-label&gt;"I smell a qaf post"&lt;/ion-label&gt;
+&lt;ion-checkbox color="dark" checked="true"&gt;&lt;/ion-checkbox&gt;
+&lt;/ion-item&gt;
+
+&lt;ion-card (tap)="tapEvent($event)"&gt;
+&lt;ion-item&gt;
+Tapped: {{tap}} times
+&lt;/ion-item&gt;
+&lt;/ion-card&gt;
+&lt;/ion-content&gt;
+                                            </code></pre>
+
+                                               <img src="homeP.png" alt="home page">
+                                               <h5 class="text-info"> Lists </h5>
+                                               <h6 class="text-info"> Source code:</h6>
+                                             <code><pre>
+                                               &lt;ion-header&gt;
+                                                 &lt;ion-navbar&gt;
+                                                   &lt;button ion-button menuToggle&gt;
+                                                     &lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+                                                   &lt;/button&gt;
+                                                   &lt;ion-title&gt;Lists&lt;/ion-title&gt;
+                                                 &lt;/ion-navbar&gt;
+                                               &lt;/ion-header&gt;
+
+                                               &lt;ion-content&gt;
+                                                 &lt;ion-list&gt;
+                                                   &lt;button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)"&gt;
+                                                     &lt;ion-icon name="{{item.icon}}" item-left&gt;&lt;/ion-icon&gt;
+                                                     {{item.title}}
+                                                     &lt;div class="item-note" item-right&gt;
+                                                       {{item.note}}
+                                                     &lt;/div&gt;
+                                                   &lt;/button&gt;
+                                                 &lt;/ion-list&gt;
+                                               &lt;/ion-content&gt;
+
+
+
+                                             </code></pre>
+                                             <img src="list.png" alt="list page">
+
+                                             <h5 class="text-info"> Cards </h5>
+                                             <h6 class="text-info"> Source code:</h6>
+                                           <code><pre>
+  &lt;ion-header&gt;
+  &lt;ion-navbar&gt;
+    &lt;button ion-button menuToggle&gt;
+      &lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+    &lt;/button&gt;
+    &lt;ion-title&gt;card&lt;/ion-title&gt;
+  &lt;/ion-navbar&gt;
+&lt;/ion-header&gt;
+
+
+&lt;ion-content class="cards-bg"&gt;
+
+&lt;ion-card&gt;
+
+  &lt;ion-card-content&gt;
+    This is just your basic card with some text to boot. Like it?  Keep scrolling...
+  &lt;/ion-card-content&gt;
+
+&lt;/ion-card&gt;
+
+&lt;ion-card&gt;
+
+  &lt;ion-card-content&gt;
+    This is another card that we've created.
+  &lt;/ion-card-content&gt;
+
+&lt;/ion-card&gt;
+
+
+
+&lt;/ion-content&gt;
+
+
+                                           </code></pre>
+                                           <img src="card.png" alt="card page">
+
+                                           <h5 class="text-info"> Ranges </h5>
+                                           <h6 class="text-info"> Source code:</h6>
+                                         <code><pre>
+
+  &lt;ion-header&gt;
+  &lt;ion-navbar&gt;
+    &lt;button ion-button menuToggle&gt;
+      &lt;ion-icon name="menu"&gt;&lt;/ion-icon&gt;
+    &lt;/button&gt;
+    &lt;ion-title&gt;Ranges&lt;/ion-title&gt;
+  &lt;/ion-navbar&gt;
+&lt;/ion-header&gt;
+&lt;ion-content class="outer-content"&gt;
+  &lt;ion-list&gt;
+    &lt;ion-list-header&gt;
+      Adjust Display
+    &lt;/ion-list-header&gt;
+    &lt;ion-item&gt;
+      &lt;ion-range [(ngModel)]="brightness"&gt;
+        &lt;ion-icon range-left small name="sunny"&gt;&lt;/ion-icon&gt;
+        &lt;ion-icon range-right name="sunny"&gt;&lt;/ion-icon&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+    &lt;ion-item&gt;
+      &lt;ion-range min="-200" max="200" pin="true" [(ngModel)]="contrast" color="secondary"&gt;
+        &lt;ion-icon range-left small name="contrast"&gt;&lt;/ion-icon&gt;
+        &lt;ion-icon range-right name="contrast"&gt;&lt;/ion-icon&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+
+    &lt;ion-item&gt;
+      &lt;ion-range min="1000" max="2000" step="100" snaps="true" [(ngModel)]="warmth" color="danger"&gt;
+        &lt;ion-icon range-left small color="danger" name="thermometer"&gt;&lt;/ion-icon&gt;
+        &lt;ion-icon range-right color="danger" name="thermometer"&gt;&lt;/ion-icon&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+  &lt;/ion-list&gt;
+
+  &lt;ion-list&gt;
+    &lt;ion-list-header&gt;
+      Adjust Text
+    &lt;/ion-list-header&gt;
+    &lt;ion-item&gt;
+      &lt;ion-range min="-100" step="10" snaps="true" [(ngModel)]="text"&gt;
+        &lt;ion-label range-left class="small-text"&gt;A&lt;/ion-label&gt;
+        &lt;ion-label range-right&gt;A&lt;/ion-label&gt;
+      &lt;/ion-range&gt;
+    &lt;/ion-item&gt;
+  &lt;/ion-list&gt;
+&lt;/ion-content&gt;
+
+
+                                         </code></pre>
+                                         <img src="range.png" alt="range page">
                                                 </div>
                                                 </div>
                                               </div>
