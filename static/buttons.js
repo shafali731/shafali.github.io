@@ -200,6 +200,7 @@ context.textBaseline = "middle";
    // return false;
 }
 
+
 dvd_but.addEventListener('click', function(evt){
   b_count = 0;
 
@@ -221,7 +222,7 @@ dvd_but.addEventListener('click', function(evt){
   //  context.clearRect(0,0,960,600);}
  , false)
 function ending(){
-  window.location.href = "../templates/endpage.html";
+  window.location.href = "../templates/floats.html";
   // console.log("hduh");
 }
 
