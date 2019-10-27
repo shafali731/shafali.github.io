@@ -6,16 +6,16 @@ var data = difference;
 
 var career = localStorage.getItem("car");
 var dict ={
-  "game development": data[0],
-  "graphic design": data[1],
-  "data science": data[2],
-  "software development": data[3],
-  "systems administrator" : data[4],
-  "computer architecture" : data[5],
-  "AI/Machine Learning" : data[6],
-  "cybersecurity": data[7],
-  "robotics": data[8],
-  "computer research": data[9],}
+  "Game Developer": data[0],
+  "Graphic Designer": data[1],
+  "Data Scientist": data[2],
+  "Software Developer": data[3],
+  "Systems Administrator" : data[4],
+  "Computer Architect" : data[5],
+  "AI/Machine Learning Expert" : data[6],
+  "Cybersecurity Expert": data[7],
+  "Robotics Expert": data[8],
+  "Computer Researcher": data[9],}
 ;
 
 // Create items array
@@ -38,7 +38,7 @@ for (var i= 0; i < items.length; i++){
 }
 
 
-var ret = "<ol>";
+var ret = "<ol style= 'font-size:40px; font-family: Pacifico, cursive, bold; margin-top:5px; '>";
 ret += "<br>";
 for(var i = 0; i < items.length; i++){
   ret += "<li>" + items[i][0] + " : " + vals[i] + "</li>";
@@ -49,7 +49,7 @@ for(var i = 0; i < items.length; i++){
   // console.log(vals[i]);
   console.log(ret);
 }
-ret += "</ol>"
+ret += "</ol style= 'padding-bottom: 10px;'>"
 
 document.getElementById("inser").innerHTML = ret;
 
@@ -57,8 +57,8 @@ document.getElementById("inser").innerHTML = ret;
 
 data= vals;
 console.log(data);
-var width = 420,
-    barHeight = 20;
+var width = 700,
+    barHeight = 65;
 
 var x = d3.scaleLinear()
     .domain([0, d3.max(data)])
@@ -84,7 +84,7 @@ var x = d3.scaleLinear()
       .attr("height", barHeight - 1); //graph appears here
 
   bar.append("text")
-      .attr("x", function(d) { return x(d) - 3; })
+      .attr("x", function(d) { return x(d) - 5; })
       .attr("y", barHeight / 2)
       .attr("dy", ".35em")
       .text(function(d) { return d; });

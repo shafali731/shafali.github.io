@@ -1,3 +1,5 @@
+var canvas = document.getElementById('playground');
+var context = canvas.getContext('2d');
 var bu_clicked = 0;
 var b_count = 0;
 var counter= 0;
@@ -113,8 +115,7 @@ function isInside(pos, rect){
 
     return pos.x> rect.x && pos.x < rect.x+rect.width && pos.y < rect.y+rect.height && pos.y > rect.y
 }
-var canvas = document.getElementById('playground');
-var context = canvas.getContext('2d');
+
 function rects(){
   // if(counter <5){
 context.beginPath();
@@ -210,6 +211,10 @@ dvd_but.addEventListener('click', function(evt){
     // console.log("work")
     // while (!button_pressed){
       // console.log("i");
+      // var pics = new Image();
+      // console.log("b_count", b_count);
+      // pics.src= backgrounds[b_count];
+      // context.drawImage(pics, 0, 0, 960, 600);
     rects();
     // console.log("hello");
    // }
@@ -283,9 +288,9 @@ canvas.addEventListener('click', function(evt) {
 
     //counter++;
   // }
-  console.log("leadership ", leadership);
-  console.log("problem ", problem_solving);
-  localStorage.setItem("leadership", leadership);
+  // console.log("leadership ", leadership);
+  // console.log("problem ", problem_solving);
+  // localStorage.setItem("leadership", leadership);
 
 }, false);
 

@@ -1,28 +1,49 @@
 .menu {
-  height: 100px;
-  background-color: #B2D6FF;    /* Medium blue */
+  height: 50px;
+  background-color: #D6E9FE; 
 }
 
-.sidebar {
+
+.Career1 {
+  padding: 10px;
   float: left;  
-  width: 200px; 
-  height: 300px;
-  background-color: #F09A9D;    /* Red */
+  width: 31%;
+  margin: 20px 1.15%;
+  border-radius: 25px;
+  background-color: #4BED00;    /* Red */
+  border: 4px solid #ecc1c8 ;
 }
 
-.content {
+
+.Career2 {
+  padding: 10px;
   float: left ; 
   width: 650px;  
-  height: 500px;
-  background-color: #F5CF8E;    /* Yellow */
+  margin: 20px 1.15%;
+  border-radius: 25px;
+  background-color: #00EDD0;    /* Yellow */
+  border: 4px solid #ecc1c8 ;
 }
 
-.footer {
-  height: 200px;
-  background-color: #D6E9FE;    /* Light blue */
+.Career3 {
+  padding: 10px;
+  width: 31%;
+  float: left;
+  border-radius: 25px;
+  margin: 20px 1.15%;
+  background-color: #9000ED;    /* Medium blue */
+  border: 4px solid #ecc1c8 ;
 }
 
 .page {
-  width: 900px;
+  width: 90%;
   margin: 0 auto;
+  font-family: 'Pacifico', cursive;
+  background-color: #D6E9FE;
 }
+
+.container {
+  overflow: hidden;
+  background-color: #D6E9FE;
+}
+
